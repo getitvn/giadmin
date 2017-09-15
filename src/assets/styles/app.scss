@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=vietnamese');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import 'variables';
 @import './bootstrap/bootstrap';
 @import './font-awesome/scss/font-awesome';
+
+a, button {
+    outline: none !important;
+}
+
+md-toolbar{
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}

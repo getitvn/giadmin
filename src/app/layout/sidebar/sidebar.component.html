@@ -1,0 +1,35 @@
+<div id="sidebar-menu" data-children=".item">
+    <a class="btn btn-link sidebar-menu-item" routerLink="/dashboard" [routerLinkActive]="['active']"><i class="fa fa-fw fa-dashboard mr-3"></i>Dashboard</a>
+    <a class="btn btn-link sidebar-menu-item"><i class="fa fa-fw fa-dashboard mr-3"></i>Sample</a>
+    <div class="item">
+        <a class="btn btn-link sidebar-menu-item hasSub" data-toggle="collapse" href="#mnuBlogs" aria-expanded="true" aria-controls="mnuBlogs" data-parent="#sidebar-menu" [class.active]="router.isActive('/dashboard') || router.isActive('/heroes')">
+            <i class="fa fa-fw fa-tachometer mr-3"></i>Blogs
+        </a>
+        <div class="collapse submenu show" id="mnuBlogs" role="tabpanel">
+            <a class="btn btn-link sidebar-menu-item" routerLink="/dashboard" [routerLinkActive]="['active']">Sample</a>
+            <a class="btn btn-link sidebar-menu-item">Sample</a>
+            <a class="btn btn-link sidebar-menu-item">Sample</a>
+        </div>
+    </div>
+    <a class="btn btn-link sidebar-menu-item"><i class="fa fa-fw fa-dashboard mr-3"></i>Contents</a>
+    <div class="item">
+        <a class="btn btn-link sidebar-menu-item hasSub" data-toggle="collapse" href="#mnuMembers" aria-expanded="false" aria-controls="mnuMembers" data-parent="#sidebar-menu">
+            <i class="fa fa-fw fa-users mr-3"></i>Members
+        </a>
+        <div class="collapse" id="mnuMembers" role="tabpanel">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+    </div>
+    <div class="item">
+        <a class="btn btn-link sidebar-menu-item hasSub" data-toggle="collapse" href="#mnuSettings" aria-expanded="false" aria-controls="mnuSettings" data-parent="#sidebar-menu">
+            <i class="fa fa-fw fa-cog mr-3"></i>Setting
+        </a>
+        <div class="collapse" id="mnuSettings" role="tabpanel">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+    </div>
+</div>
+
+<div class="sidebar-copyright fixed-bottom">
+    <span>Powered by GetIT VN ©2017</span>
+</div>

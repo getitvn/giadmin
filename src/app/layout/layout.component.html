@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+
+<md-toolbar color="primary">
+    <button md-icon-button *ngIf="!isShowSidebar" (click)="sidenav.toggle()">
+        <md-icon class="md-24" aria-label="Toggle Sidebar">menu</md-icon>
+      </button>
+      <img src="assets/images/logo-giadmin-light.svg" height="32" class="d-inline-block align-top" alt="Logo GIADMIN">
+    <span class="toolbar-spacer"></span>
+</md-toolbar>
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav mode="{{navMode}}" class="sidebar">
+    <app-sidebar></app-sidebar>
+  </md-sidenav>
+  <div class="main-content">
+      <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

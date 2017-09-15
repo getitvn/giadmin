@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 // Routing
@@ -26,6 +27,7 @@ import { Error404Component } from './pages/error404/error404.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
