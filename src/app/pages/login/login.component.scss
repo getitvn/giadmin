@@ -1,0 +1,36 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: #0277BD;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    top: 150px;
+    max-width: 21rem;
+    margin: auto auto;
+}
+.help-block{
+    color: #CC5454;
+    text-align: right;
+    display: block;
+}
+.has-error input{
+    border: 1px solid #CC5454;
+    background-color: rgba( #CC5454,  0.1) ;
+}
+@media (max-width: 600px){
+    .card {
+        top: 50px;
+    }
+}
+
+.copyright{
+    padding: 5px;
+    color: lighten(#212121, 50%);
+    font-size: 12px;
+}
+.copyright:hover{
+    color: #212121;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}

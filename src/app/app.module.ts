@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { CookieService } from 'ngx-cookie-service';
 
 // Routing
 import { RoutingModule } from "./app.routing";
@@ -52,7 +53,8 @@ import { Error404Component } from './pages/error404/error404.component';
     AuthGuard,
     AlertService,
     AuthenticationService,
-    UserService
+    UserService,
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
